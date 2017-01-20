@@ -16,21 +16,20 @@ namespace Lesson2Excercise
         // This constructor sets the purchase price to zero
         public PurchasePrice()
         {
-            _price = 0; 
+            Price = 35;
         }
+
         // This constructor allows a new purchase price to be set by the user
         public PurchasePrice(int initialPrice)
         {
-            _price = initialPrice;
+            Price = initialPrice;
         }
+
         //  This property gets the value the purchase price.
         public int Price
         {
-            get
-            {
-                return _price;
-            }
+            get { return _price; }
+            set { _price = value; }
         }
     }
-
 } //end PurchasePrice
