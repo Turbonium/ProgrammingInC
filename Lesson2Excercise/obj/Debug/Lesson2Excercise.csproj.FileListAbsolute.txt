@@ -10,3 +10,6 @@ C:\Users\mikett\Desktop\ProgrammingC--master\ProgrammingC--master\ProgrammingInC
 C:\Users\mikett\Desktop\ProgrammingC--master\ProgrammingC--master\ProgrammingInC\Lesson2Excercise\bin\Debug\Lesson2Excercise.exe
 C:\Users\mikett\Desktop\ProgrammingC--master\ProgrammingC--master\ProgrammingInC\Lesson2Excercise\bin\Debug\Lesson2Excercise.pdb
 C:\Users\mikett\Desktop\ProgrammingC--master\ProgrammingC--master\ProgrammingInC\Lesson2Excercise\obj\Debug\Lesson2Excercise.csprojResolveAssemblyReference.cache
+C:\Source\ProgrammingInC\Lesson2Excercise\bin\Debug\Lesson2Excercise.exe.config
+C:\Source\ProgrammingInC\Lesson2Excercise\obj\Debug\Lesson2Excercise.exe
+C:\Source\ProgrammingInC\Lesson2Excercise\obj\Debug\Lesson2Excercise.pdb
