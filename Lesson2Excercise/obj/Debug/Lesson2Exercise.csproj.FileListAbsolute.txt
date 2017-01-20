@@ -1,0 +1,2 @@
+C:\Users\mikett\Desktop\ProgrammingC--master\ProgrammingC--master\Lesson1Excercise\Lesson2Exercise\bin\Debug\Lesson2Exercise.exe.config
+C:\Users\mikett\Desktop\ProgrammingC--master\ProgrammingC--master\ProgrammingInC\Lesson2Exercise\bin\Debug\Lesson2Exercise.exe.config

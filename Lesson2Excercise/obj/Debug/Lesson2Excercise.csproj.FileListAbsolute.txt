@@ -1,0 +1,12 @@
+C:\Users\mikett\Desktop\ProgrammingC--master\ProgrammingC--master\ProgrammingInC\Lesson2Exercise\bin\Debug\Lesson2Excercise.exe.config
+C:\Users\mikett\Desktop\ProgrammingC--master\ProgrammingC--master\ProgrammingInC\Lesson2Exercise\bin\Debug\Lesson2Excercise.exe
+C:\Users\mikett\Desktop\ProgrammingC--master\ProgrammingC--master\ProgrammingInC\Lesson2Exercise\bin\Debug\Lesson2Excercise.pdb
+C:\Users\mikett\Desktop\ProgrammingC--master\ProgrammingC--master\ProgrammingInC\Lesson2Exercise\obj\Debug\Lesson2Excercise.csprojResolveAssemblyReference.cache
+C:\Users\mikett\Desktop\ProgrammingC--master\ProgrammingC--master\ProgrammingInC\Lesson2Exercise\obj\Debug\Lesson2Excercise.exe
+C:\Users\mikett\Desktop\ProgrammingC--master\ProgrammingC--master\ProgrammingInC\Lesson2Exercise\obj\Debug\Lesson2Excercise.pdb
+C:\Users\mikett\Desktop\ProgrammingC--master\ProgrammingC--master\ProgrammingInC\Lesson2Excercise\bin\Debug\Lesson2Excercise.exe.config
+C:\Users\mikett\Desktop\ProgrammingC--master\ProgrammingC--master\ProgrammingInC\Lesson2Excercise\obj\Debug\Lesson2Excercise.exe
+C:\Users\mikett\Desktop\ProgrammingC--master\ProgrammingC--master\ProgrammingInC\Lesson2Excercise\obj\Debug\Lesson2Excercise.pdb
+C:\Users\mikett\Desktop\ProgrammingC--master\ProgrammingC--master\ProgrammingInC\Lesson2Excercise\bin\Debug\Lesson2Excercise.exe
+C:\Users\mikett\Desktop\ProgrammingC--master\ProgrammingC--master\ProgrammingInC\Lesson2Excercise\bin\Debug\Lesson2Excercise.pdb
+C:\Users\mikett\Desktop\ProgrammingC--master\ProgrammingC--master\ProgrammingInC\Lesson2Excercise\obj\Debug\Lesson2Excercise.csprojResolveAssemblyReference.cache

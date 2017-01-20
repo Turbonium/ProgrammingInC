@@ -1,0 +1,6 @@
+C:\Source\Lesson1Excercise\Lesson1Excercise\bin\Debug\Lesson1Excercise.exe.config
+C:\Source\Lesson1Excercise\Lesson1Excercise\bin\Debug\Lesson1Excercise.exe
+C:\Source\Lesson1Excercise\Lesson1Excercise\bin\Debug\Lesson1Excercise.pdb
+C:\Source\Lesson1Excercise\Lesson1Excercise\obj\Debug\Lesson1Excercise.csprojResolveAssemblyReference.cache
+C:\Source\Lesson1Excercise\Lesson1Excercise\obj\Debug\Lesson1Excercise.exe
+C:\Source\Lesson1Excercise\Lesson1Excercise\obj\Debug\Lesson1Excercise.pdb
