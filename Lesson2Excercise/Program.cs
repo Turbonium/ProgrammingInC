@@ -25,7 +25,7 @@ namespace Lesson2Excercise
 
 
             //Test of Adding to the Rack
-            sodaRack.AddACanOf("REGULAR");
+            sodaRack.AddACanOf("Regular");
             sodaRack.AddACanOf("REGULAR");
             sodaRack.AddACanOf("REGULAR");
             sodaRack.AddACanOf("REGULAR");
