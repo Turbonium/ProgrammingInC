@@ -59,6 +59,12 @@ namespace Lesson3Excercise
             }
         }
 
+        //NEW Enumeration Style
+        public void AddACanOf(Flavor FlavorOfCanToBeAdded)
+        {
+            AddACanOf(FlavorOfCanToBeAdded.ToString());
+        }
+
         //  This method will remove a can of the specified flavor from the rack.
         public void RemoveACanOf(string flavorOfCanToBeRemoved)
         {
@@ -86,6 +92,12 @@ namespace Lesson3Excercise
                         break;
                 }
             }
+        }
+        
+        //NEW Enumeration Style
+        public void RemoveACanOf(Flavor FlavorOfCanToBeRemoved)
+        {
+            RemoveACanOf(FlavorOfCanToBeRemoved.ToString());
         }
 
         //  This method will fill the can rack.
@@ -120,6 +132,12 @@ namespace Lesson3Excercise
             }
         }
 
+        //NEW Enumeration Style
+        public void EmptyCanRackOf(Flavor FlavorOfBinToBeEmptied)
+        {
+            EmptyCanRackOf(FlavorOfBinToBeEmptied.ToString());
+        }
+
         // OPTIONAL – returns true if the rack is full of a specified flavor
         // false otherwise
         public bool IsFull(string flavorOfBinToCheck)
@@ -144,6 +162,12 @@ namespace Lesson3Excercise
             }
             return result;
 
+        }
+
+        //NEW Enumeration Style
+        public bool IsFull(Flavor FlavorOfBinToBeChecked)
+        {
+            return IsFull(FlavorOfBinToBeChecked.ToString());
         }
 
         // OPTIONAL – return true if the rack is empty of a specified flavor
@@ -171,6 +195,11 @@ namespace Lesson3Excercise
             return result;
         }
 
+        //NEW Enumeration Style
+        public bool IsEmpty(Flavor FlavorOfBinToBeChecked)
+        {
+            return IsEmpty(FlavorOfBinToBeChecked.ToString());
+        }
     }
 
 } //end CanRack
