@@ -26,6 +26,7 @@ namespace Lesson3Excercise
             decimal userInput2 = decimal.Parse(Console.ReadLine());
             Console.WriteLine($"You have inserted {userInput2:c} cents. Thanks, Here is your soda.");
             sodaRack.RemoveACanOf("REGULAR");
+            sodaRack.RemoveACanOf(Flavor.REGULAR);
         }
     }
 }
