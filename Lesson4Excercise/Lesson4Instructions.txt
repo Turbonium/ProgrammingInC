@@ -1,0 +1,38 @@
+﻿Exercise 4.1 – Rework the implementation of CanRack
+    1. You know, the can rack really should have been implemented using an array based on the number of flavors of cans in our system. Go back and change the implementation. Use the Flavor enumeration to index the values of the array.
+    
+    2. Here’s a couple of hints to get things rolling.2.1. You could use this in the implementation
+    // Create an array of integers representing the number of cans in the rack indexed by the flavors // The Enum.GetValues().Length value represents the number of flavors (i.e., values in the type flavors). private int[] rack = new int[Enum.GetValues(typeof(Flavor)).Length];
+
+    2.2. Here’s a couple of foreach loops
+    // A foreach loop that gets each representational value of the enumeration as an int foreach (int flavorValue in Enum.GetValues(typeof(Flavor)) {}
+    // A foreach loop that gets each representational name of the enumeration as a string foreach (string flavorName in Enum.GetNames(typeof(Flavor)) {}
+    
+    2.3. Add a new method to CanRack
+    // write out the contents of rack array. For example, one flavor per line with the flavor name and // the number of cans of soda of that flavor. In a real system, this function would probably be in a // separate class, and the CanRack would export this information as strings. We’re doing it this way // for the sake of the simplicity of the exercise.
+    public void DisplayCanRack ()
+
+    2.4. Remove all traces of the implementation of CanRack that just used instance variables to
+    represent the number of cans of soda of a given flavor.
+
+    2.5. Does this design work better, worse, or it is the same? What are the differences between the two approaches?
+    
+    2.6. Add a loop in your Main() method that will allow the user to continue to purchase cans of soda indefinitely. After every can purchase, the user will be asked to continue or exit from the vending machine. Your code should read the value in from the user and decide whether to continue or exit.
+    
+    2.7. Run Main() and attempt to purchase more cans of soda than exist for the flavor dispensed. Do you see the correct error message?
+
+Exercise 4.2 – Take coins instead of numbers
+    1. Modify your vending machine to take coin values instead of numbers 1.1. Move or copy the Coin.cs file created in an earlier exercise into your vending machine
+    project.
+
+    1.2. The user should input coins (i.e., type in the names of coins), until the combination of coins entered is sufficient to pay for a soda. Now you know why sodas are so cheap. You’d be typing forever if they cost more.
+
+    1.3. The user should pick a flavor (i.e., type in the name of a soda flavor).
+
+OPTIONAL ------
+Exercise 4.3 – Add Command-Line Arguments
+    1. Modify the vending console application to accept and process command-line arguments. 2. These arguments would be soda flavor names and coin names a. For example, if the user types the following command-line, the vending machine
+    would dispense an orange soda the beginning of the operation of the vending
+    machine.
+    
+	EG:  Vend quarter dime orange

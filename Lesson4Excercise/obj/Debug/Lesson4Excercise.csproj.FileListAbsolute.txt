@@ -1,0 +1,6 @@
+C:\Source\Repos\ProgrammingInC\Lesson4Excercise\bin\Debug\Lesson4Excercise.exe.config
+C:\Source\Repos\ProgrammingInC\Lesson4Excercise\bin\Debug\Lesson4Excercise.exe
+C:\Source\Repos\ProgrammingInC\Lesson4Excercise\bin\Debug\Lesson4Excercise.pdb
+C:\Source\Repos\ProgrammingInC\Lesson4Excercise\obj\Debug\Lesson4Excercise.csprojResolveAssemblyReference.cache
+C:\Source\Repos\ProgrammingInC\Lesson4Excercise\obj\Debug\Lesson4Excercise.exe
+C:\Source\Repos\ProgrammingInC\Lesson4Excercise\obj\Debug\Lesson4Excercise.pdb
