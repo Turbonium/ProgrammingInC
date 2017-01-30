@@ -2,14 +2,16 @@
     1. You know, the can rack really should have been implemented using an array based on the number of flavors of cans in our system. Go back and change the implementation. Use the Flavor enumeration to index the values of the array.
     
     2. Here’s a couple of hints to get things rolling.2.1. You could use this in the implementation
-    // Create an array of integers representing the number of cans in the rack indexed by the flavors // The Enum.GetValues().Length value represents the number of flavors (i.e., values in the type flavors). private int[] rack = new int[Enum.GetValues(typeof(Flavor)).Length];
+    // Create an array of integers representing the number of cans in the rack indexed by the flavors // The Enum.GetValues().Length value represents the number of flavors (i.e., values in the type flavors). 
+	private int[] rack = new int[Enum.GetValues(typeof(Flavor)).Length];
 
     2.2. Here’s a couple of foreach loops
     // A foreach loop that gets each representational value of the enumeration as an int foreach (int flavorValue in Enum.GetValues(typeof(Flavor)) {}
     // A foreach loop that gets each representational name of the enumeration as a string foreach (string flavorName in Enum.GetNames(typeof(Flavor)) {}
     
     2.3. Add a new method to CanRack
-    // write out the contents of rack array. For example, one flavor per line with the flavor name and // the number of cans of soda of that flavor. In a real system, this function would probably be in a // separate class, and the CanRack would export this information as strings. We’re doing it this way // for the sake of the simplicity of the exercise.
+    // write out the contents of rack array. For example, one flavor per line with the flavor name and the number of cans of soda of that flavor. 
+	In a real system, this function would probably be in a // separate class, and the CanRack would export this information as strings. We’re doing it this way // for the sake of the simplicity of the exercise.
     public void DisplayCanRack ()
 
     2.4. Remove all traces of the implementation of CanRack that just used instance variables to
@@ -17,7 +19,8 @@
 
     2.5. Does this design work better, worse, or it is the same? What are the differences between the two approaches?
     
-    2.6. Add a loop in your Main() method that will allow the user to continue to purchase cans of soda indefinitely. After every can purchase, the user will be asked to continue or exit from the vending machine. Your code should read the value in from the user and decide whether to continue or exit.
+    2.6. Add a loop in your Main() method that will allow the user to continue to purchase cans of soda indefinitely. After every can purchase, the user will be asked to continue or exit from the vending machine. 
+	Your code should read the value in from the user and decide whether to continue or exit.
     
     2.7. Run Main() and attempt to purchase more cans of soda than exist for the flavor dispensed. Do you see the correct error message?
 

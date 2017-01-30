@@ -10,9 +10,6 @@ using System.Threading.Tasks;
 
 namespace Lesson4Excercise
 {
-
-    public enum Flavor { REGULAR, ORANGE, LEMON }
-
     class Can
     {
         public readonly Flavor TheFlavor = Flavor.REGULAR;
