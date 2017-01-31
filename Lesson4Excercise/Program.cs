@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
@@ -18,44 +19,86 @@ namespace Lesson4Excercise
             PurchasePrice sodaCost = new PurchasePrice(35);
             PurchasePrice sodaCostDecimal = new PurchasePrice(0.35M);
             CanRack sodaRack = new CanRack();
-            Console.WriteLine("Welcome to the .NET C# Soda Vending Machine");
             bool exitVend = false;
             Prompt promptYN;
+            Flavor flavorChoice;
+
+            Console.WriteLine("Welcome to the .NET C# Soda Vending Machine");
+
 
             while (exitVend != true)
             {
-                //Console.WriteLine($"Please insert {sodaCost.Price} cents: (old version)");
-                //int userInput = int.Parse(Console.ReadLine()); //Changed this to int.Parse per David Blodgett's feedback
-                //Console.WriteLine($"You have inserted {userInput} cents. Thanks, Here is your soda.");
+                //First Display Can amounts
+                sodaRack.DisplayCanRack();
+                Console.WriteLine("-----------------------------------");
                 Console.Write($"Please insert {sodaCostDecimal.DecimalPrice} cents: ");
-                decimal userInput2 = decimal.Parse(Console.ReadLine());
-                if (!sodaRack.IsEmpty(Flavor.REGULAR))
+                
+                //Begin Coin Selection Region
+                decimal coinValuesInserted = 0M;
+                while (coinValuesInserted < sodaCostDecimal.DecimalPrice)
                 {
-                    Console.WriteLine($"You have inserted {userInput2:c} cents. Thanks, Here is your soda.");
-                    sodaRack.RemoveACanOf(Flavor.REGULAR);
+                    decimal valueNeeded = sodaCostDecimal.DecimalPrice - coinValuesInserted;
+                    Console.WriteLine($"You have a total coin value of {coinValuesInserted}.  You need to insert an additional {valueNeeded:c}");
+                    string nameOfCoinInserted = Console.ReadLine().ToUpper();
+                    Coin coinInserted = new Coin(nameOfCoinInserted);
+                    Console.WriteLine($"You inserted a {coinInserted} with a value of {coinInserted.ValueOf:c}");
+                    coinValuesInserted += coinInserted.ValueOf;
+                }
+                //End Coin Selection Region
+
+                //Begin Flavor Selection Region
+                Console.Clear();
+                sodaRack.DisplayCanRack();
+                Console.WriteLine("Please choose a flavor by Availability:");
+                string flavorChosen = Console.ReadLine().ToUpper();
+                if (Enum.TryParse(flavorChosen, out flavorChoice))
+                {
+                    if (!sodaRack.IsEmpty(flavorChoice))
+                    {
+                        sodaRack.RemoveACanOf(flavorChoice);
+                        Console.WriteLine($"Thanks, here is your can of {flavorChoice}");
+                    }
+                    else
+                    {
+                        Console.WriteLine(
+                            $"Sorry, We're out flavor {flavorChoice}, Unable to process your request!  Choose a Different Flavor!");
+
+                    }
+
                 }
                 else
                 {
-                    Console.WriteLine(
-                        $"Sorry, We're out flavor {Flavor.REGULAR}, Unable to process your request!  Exiting!");
-                    break;
+                    Console.Clear();
+                    Console.WriteLine("Please Choose a proper flavor");
                 }
-                Console.Write("Would you like to stop the vending machine and return results of remaining Sodas? (Y/N)");
+
+                //END Flavor Selection Region
+
+                //Exit Vending Machine Region
+
+                Console.Write(
+                    "Would you like to stop the vending machine and return results of remaining Sodas? (Y/N)");
                 string userResponse = Console.ReadLine().ToUpper();
                 if (Enum.TryParse(userResponse, out promptYN))
                 {
                     if (userResponse.StartsWith("Y"))
                     {
-                        exitVend = true;
+                        Console.Clear();
                         Console.Write("You Chose to stop using the vending machine!");
+                        sodaRack.DisplayCanRack();
+                        break;
                     }
+                    Console.Clear();
                 }
                 else
                 {
                     Console.WriteLine("Please Type in a valid Y/N value! (Yes, Y, No, N)");
                 }
+
+            // END Exit Vending Machine Region
+
             }
-            sodaRack.DisplayCanRack();
+
         }
     }
 }

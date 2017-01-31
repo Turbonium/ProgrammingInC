@@ -260,8 +260,7 @@ namespace Lesson4Excercise
             foreach (string i in Enum.GetNames(typeof(Flavor)))
             {
                 flav = (Flavor)Enum.Parse(typeof(Flavor), i);
-                Console.WriteLine($"Name of Flavor = {i}");
-                Console.WriteLine($"Index Value of Rack array for Flavor {i} is {rack[(int)flav]}");
+                Console.WriteLine($"Number of Cans available for Flavor {i} is {rack[(int)flav]}");
             }
         }
     }
