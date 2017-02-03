@@ -2,3 +2,8 @@ C:\Users\mgket\Desktop\06.0 Console As Library\bin\Debug\Lesson6ConsoleAsLibrary
 C:\Users\mgket\Desktop\06.0 Console As Library\bin\Debug\Lesson6ConsoleAsLibrary.pdb
 C:\Users\mgket\Desktop\06.0 Console As Library\obj\x86\Debug\Lesson6ConsoleAsLibrary.exe
 C:\Users\mgket\Desktop\06.0 Console As Library\obj\x86\Debug\Lesson6ConsoleAsLibrary.pdb
+C:\Source\ProgrammingInC\Lesson6ConsoleAsLibrary\obj\x86\Debug\Lesson6ConsoleAsLibrary.exe
+C:\Source\ProgrammingInC\Lesson6ConsoleAsLibrary\obj\x86\Debug\Lesson6ConsoleAsLibrary.pdb
+C:\Source\ProgrammingInC\Lesson6ConsoleAsLibrary\bin\Debug\Lesson6ConsoleAsLibrary.exe
+C:\Source\ProgrammingInC\Lesson6ConsoleAsLibrary\bin\Debug\Lesson6ConsoleAsLibrary.pdb
+C:\Source\ProgrammingInC\Lesson6ConsoleAsLibrary\obj\x86\Debug\Lesson6ConsoleAsLibrary.csprojResolveAssemblyReference.cache
