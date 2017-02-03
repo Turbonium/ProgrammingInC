@@ -124,6 +124,7 @@ namespace Lesson6ConsoleAsLibrary
             return IsEmpty(FlavorOfBinToBeChecked.ToString());
         }
 
+        //Example of Indexing
         public int this[Flavor FlavorOfBin]
         {
             get

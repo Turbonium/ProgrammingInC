@@ -19,7 +19,10 @@ namespace Lesson6ConsoleAsLibrary
         // constructor to create a coin box with some coins in it
         public CoinBox(List<Coin> SeedMoney)
         {
-            box = SeedMoney;
+            //box = SeedMoney;  //Shallow Copy
+            //box = new List<Coin>(SeedMoney); //Deep Copy using copy constructor
+            box = new List<Coin>();
+            foreach (Coin c in SeedMoney) box.Add(c);  //Additional way to deep copy
         }
 
         // Note that the reverse list object must be created
