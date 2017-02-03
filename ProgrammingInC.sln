@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson6ConsoleAsLibrary", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson7WindowsApplication", "Lesson7WindowsApplication\Lesson7WindowsApplication.csproj", "{582D09FC-1C08-47A5-BBE5-11AF90755315}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson7Excercise", "Lesson7Excercise\Lesson7Excercise.csproj", "{C6DB5AA1-4A17-48AE-BDE8-8F1437320BAF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -79,6 +81,14 @@ Global
 		{582D09FC-1C08-47A5-BBE5-11AF90755315}.Release|Any CPU.Build.0 = Release|Any CPU
 		{582D09FC-1C08-47A5-BBE5-11AF90755315}.Release|x86.ActiveCfg = Release|Any CPU
 		{582D09FC-1C08-47A5-BBE5-11AF90755315}.Release|x86.Build.0 = Release|Any CPU
+		{C6DB5AA1-4A17-48AE-BDE8-8F1437320BAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6DB5AA1-4A17-48AE-BDE8-8F1437320BAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6DB5AA1-4A17-48AE-BDE8-8F1437320BAF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C6DB5AA1-4A17-48AE-BDE8-8F1437320BAF}.Debug|x86.Build.0 = Debug|Any CPU
+		{C6DB5AA1-4A17-48AE-BDE8-8F1437320BAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6DB5AA1-4A17-48AE-BDE8-8F1437320BAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6DB5AA1-4A17-48AE-BDE8-8F1437320BAF}.Release|x86.ActiveCfg = Release|Any CPU
+		{C6DB5AA1-4A17-48AE-BDE8-8F1437320BAF}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
