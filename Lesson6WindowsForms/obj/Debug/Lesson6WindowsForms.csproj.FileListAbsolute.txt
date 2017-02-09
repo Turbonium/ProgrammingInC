@@ -1,0 +1,9 @@
+C:\Source\Repos\ProgrammingInC\Lesson6WindowsForms\bin\Debug\Lesson6WindowsForms.exe.config
+C:\Source\Repos\ProgrammingInC\Lesson6WindowsForms\bin\Debug\Lesson6WindowsForms.exe
+C:\Source\Repos\ProgrammingInC\Lesson6WindowsForms\bin\Debug\Lesson6WindowsForms.pdb
+C:\Source\Repos\ProgrammingInC\Lesson6WindowsForms\obj\Debug\Lesson6WindowsForms.csprojResolveAssemblyReference.cache
+C:\Source\Repos\ProgrammingInC\Lesson6WindowsForms\obj\Debug\Lesson6WindowsForms.Form1.resources
+C:\Source\Repos\ProgrammingInC\Lesson6WindowsForms\obj\Debug\Lesson6WindowsForms.Properties.Resources.resources
+C:\Source\Repos\ProgrammingInC\Lesson6WindowsForms\obj\Debug\Lesson6WindowsForms.csproj.GenerateResource.Cache
+C:\Source\Repos\ProgrammingInC\Lesson6WindowsForms\obj\Debug\Lesson6WindowsForms.exe
+C:\Source\Repos\ProgrammingInC\Lesson6WindowsForms\obj\Debug\Lesson6WindowsForms.pdb

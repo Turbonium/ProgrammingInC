@@ -7,3 +7,6 @@ C:\Source\ProgrammingInC\Lesson7WindowsApplication\obj\Debug\Lesson7WindowsAppli
 C:\Source\ProgrammingInC\Lesson7WindowsApplication\obj\Debug\Lesson7WindowsApplication.csproj.GenerateResource.Cache
 C:\Source\ProgrammingInC\Lesson7WindowsApplication\obj\Debug\Lesson7WindowsApplication.exe
 C:\Source\ProgrammingInC\Lesson7WindowsApplication\obj\Debug\Lesson7WindowsApplication.pdb
+C:\Source\Repos\ProgrammingInC\Lesson7WindowsApplication\bin\Debug\Lesson7WindowsApplication.exe.config
+C:\Source\Repos\ProgrammingInC\Lesson7WindowsApplication\obj\Debug\Lesson7WindowsApplication.exe
+C:\Source\Repos\ProgrammingInC\Lesson7WindowsApplication\obj\Debug\Lesson7WindowsApplication.pdb
