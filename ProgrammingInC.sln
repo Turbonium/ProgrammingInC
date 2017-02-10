@@ -17,7 +17,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson6ConsoleAsLibrary", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson7ClassNotes", "Lesson7WindowsApplication\Lesson7ClassNotes.csproj", "{582D09FC-1C08-47A5-BBE5-11AF90755315}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson6WindowsForms", "Lesson6WindowsForms\Lesson6WindowsForms.csproj", "{3F2A0908-0539-4323-BA13-1827FE51ABFA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson6SodaVendingMachineWFA", "Lesson6WindowsForms\Lesson6SodaVendingMachineWFA.csproj", "{3F2A0908-0539-4323-BA13-1827FE51ABFA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

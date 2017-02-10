@@ -65,6 +65,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -81,6 +82,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Lesson6Instructions.txt" />
+    <None Include="Resources\Yellow1.jpg" />
+    <None Include="Resources\Orange.jpg" />
+    <None Include="Resources\Regular.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lesson6ConsoleAsLibrary\Lesson6ConsoleAsLibrary.csproj">
+      <Project>{0bd4fd20-05cf-41b6-991c-cb1dd6dfbbba}</Project>
+      <Name>Lesson6ConsoleAsLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
