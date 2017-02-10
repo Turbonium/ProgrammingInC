@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Lesson6ConsoleAsLibrary;
+using System.Diagnostics;
 
 namespace Lesson6WindowsForms
 {
@@ -17,15 +18,21 @@ namespace Lesson6WindowsForms
         {
             InitializeComponent();
         }
-        private CoinBox primaryCoinBox = new CoinBox(new List<Coin> {
-                new Coin(Coin.Denomination.QUARTER), new Coin(Coin.Denomination.DIME),
-                new Coin(Coin.Denomination.NICKEL), new Coin(Coin.Denomination.QUARTER),
-                new Coin(Coin.Denomination.QUARTER), new Coin(Coin.Denomination.DIME) });
 
-        private CoinBox tempCoinBox = new CoinBox();
-        private PurchasePrice sodaPrice = new PurchasePrice(0.35M);
+        private readonly CoinBox primaryCoinBox = new CoinBox(new List<Coin>
+        {
+            new Coin(Coin.Denomination.QUARTER),
+            new Coin(Coin.Denomination.DIME),
+            new Coin(Coin.Denomination.NICKEL),
+            new Coin(Coin.Denomination.QUARTER),
+            new Coin(Coin.Denomination.QUARTER),
+            new Coin(Coin.Denomination.DIME)
+        });
 
-        private CanRack canRack = new CanRack();
+        private readonly CoinBox tempCoinBox = new CoinBox();
+        private readonly PurchasePrice sodaPrice = new PurchasePrice(0.35M);
+
+        private readonly CanRack canRack = new CanRack();
 
         private void updateInsertedTotal()
         {
@@ -59,7 +66,7 @@ namespace Lesson6WindowsForms
 
         private void dispenseCan(Flavor dispenseFlavor)
         {
-            decimal amountInserted = tempCoinBox.ValueOf;
+            var amountInserted = tempCoinBox.ValueOf;
             if (tempCoinBox.ValueOf >= sodaPrice.PriceDecimal && !canRack.IsEmpty(dispenseFlavor))
             {
                 tempCoinBox.Transfer(primaryCoinBox);
@@ -67,7 +74,7 @@ namespace Lesson6WindowsForms
                 canRack.RemoveACanOf(dispenseFlavor);
                 MessageBox.Show(string.Format($"Thanks! Have a {dispenseFlavor} soda!"));
                 ejectButtonsReset();
-                decimal changeDue = amountInserted - sodaPrice.PriceDecimal;
+                var changeDue = amountInserted - sodaPrice.PriceDecimal;
                 if (changeDue > 0M && primaryCoinBox.CanMakeChange)
                 {
                     primaryCoinBox.Withdraw(changeDue);
@@ -75,11 +82,36 @@ namespace Lesson6WindowsForms
                 }
                 labelInsertedDisplay.Visible = !primaryCoinBox.CanMakeChange;
             }
+
+            if (canRack.IsEmpty(dispenseFlavor))
+            {
+                switch (dispenseFlavor.ToString().ToUpper())
+                {
+                    case "REGULAR":
+                        this.buttonRegular.Text = "SOLD OUT!";
+                        break;
+                    case "ORANGE":
+                        this.buttonOrange.Text = "SOLD OUT!";
+                        break;
+                    case "LEMON":
+                        this.buttonOrange.Text = "SOLD OUT!";
+                        break;
+                }
+            }
         }
+
+        private void SodaVendingMachine_load(object sender, EventArgs e)
+        {
+            buttonRegular.Enabled = false;
+            buttonOrange.Enabled = false;
+            buttonYellow.Enabled = false;
+        }
+
+
 
         private void buttonCoinReturn_Click(object sender, EventArgs e)
         {
-            decimal amountInserted = tempCoinBox.ValueOf;
+            var amountInserted = tempCoinBox.ValueOf;
 
             if (amountInserted > 0M)
             {
@@ -89,61 +121,58 @@ namespace Lesson6WindowsForms
             }
 
             ejectButtonsReset();
-
         }
 
         private void labelInsertCoins_Click(object sender, EventArgs e)
         {
-
         }
 
         private void labelSodaCost_Click(object sender, EventArgs e)
         {
-
         }
 
         private void labelTotalAmountInserted_Click(object sender, EventArgs e)
         {
-
         }
 
         private void pictureRegular_Click(object sender, EventArgs e)
         {
-
         }
 
         private void pictureOrange_Click(object sender, EventArgs e)
         {
-
         }
 
         private void pictureYellow_Click(object sender, EventArgs e)
         {
-
         }
 
         private void buttonNickel_Click(object sender, EventArgs e)
         {
-            Coin nickel = new Coin(Coin.Denomination.NICKEL);
+            var nickel = new Coin(Coin.Denomination.NICKEL);
             insertCoinInTempBox(nickel);
+            updateInsertedTotal();
         }
 
         private void buttonDime_Click(object sender, EventArgs e)
         {
-            Coin dime = new Coin(Coin.Denomination.DIME);
+            var dime = new Coin(Coin.Denomination.DIME);
             insertCoinInTempBox(dime);
+            updateInsertedTotal();
         }
 
         private void buttonQuarter_Click(object sender, EventArgs e)
         {
-            Coin quarter = new Coin(Coin.Denomination.QUARTER);
+            var quarter = new Coin(Coin.Denomination.QUARTER);
             insertCoinInTempBox(quarter);
+            updateInsertedTotal();
         }
 
         private void buttonHalfDollar_Click(object sender, EventArgs e)
         {
-            Coin halfDollar = new Coin(Coin.Denomination.HALFDOLLAR);
+            var halfDollar = new Coin(Coin.Denomination.HALFDOLLAR);
             insertCoinInTempBox(halfDollar);
+            updateInsertedTotal();
         }
 
         private void buttonRegular_Click(object sender, EventArgs e)
@@ -163,7 +192,6 @@ namespace Lesson6WindowsForms
 
         private void labelInsertedDisplay_Click(object sender, EventArgs e)
         {
-
         }
     }
 }

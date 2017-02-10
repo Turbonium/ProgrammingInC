@@ -82,7 +82,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Lesson6Instructions.txt" />
-    <None Include="Resources\Yellow1.jpg" />
+    <None Include="Resources\Lemon.jpg" />
     <None Include="Resources\Orange.jpg" />
     <None Include="Resources\Regular.jpg" />
   </ItemGroup>

@@ -40,10 +40,10 @@
             this.buttonDime = new System.Windows.Forms.Button();
             this.buttonQuarter = new System.Windows.Forms.Button();
             this.buttonHalfDollar = new System.Windows.Forms.Button();
+            this.labelInsertedDisplay = new System.Windows.Forms.Label();
             this.pictureYellow = new System.Windows.Forms.PictureBox();
             this.pictureOrange = new System.Windows.Forms.PictureBox();
             this.pictureRegular = new System.Windows.Forms.PictureBox();
-            this.labelInsertedDisplay = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureYellow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureOrange)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureRegular)).BeginInit();
@@ -53,7 +53,7 @@
             // 
             this.labelInsertCoins.AutoSize = true;
             this.labelInsertCoins.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelInsertCoins.Location = new System.Drawing.Point(30, 32);
+            this.labelInsertCoins.Location = new System.Drawing.Point(28, 36);
             this.labelInsertCoins.Name = "labelInsertCoins";
             this.labelInsertCoins.Size = new System.Drawing.Size(229, 16);
             this.labelInsertCoins.TabIndex = 0;
@@ -63,9 +63,10 @@
             // labelSodaCost
             // 
             this.labelSodaCost.AutoSize = true;
-            this.labelSodaCost.Location = new System.Drawing.Point(33, 55);
+            this.labelSodaCost.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSodaCost.Location = new System.Drawing.Point(323, 23);
             this.labelSodaCost.Name = "labelSodaCost";
-            this.labelSodaCost.Size = new System.Drawing.Size(135, 13);
+            this.labelSodaCost.Size = new System.Drawing.Size(152, 15);
             this.labelSodaCost.TabIndex = 1;
             this.labelSodaCost.Text = "Cost of a Soda is 35 Cents.";
             this.labelSodaCost.Click += new System.EventHandler(this.labelSodaCost_Click);
@@ -126,7 +127,7 @@
             this.buttonYellow.Name = "buttonYellow";
             this.buttonYellow.Size = new System.Drawing.Size(75, 23);
             this.buttonYellow.TabIndex = 10;
-            this.buttonYellow.Text = "Yellow";
+            this.buttonYellow.Text = "Lemon";
             this.buttonYellow.UseVisualStyleBackColor = true;
             this.buttonYellow.Click += new System.EventHandler(this.buttonYellow_Click);
             // 
@@ -160,11 +161,22 @@
             this.buttonHalfDollar.UseVisualStyleBackColor = true;
             this.buttonHalfDollar.Click += new System.EventHandler(this.buttonHalfDollar_Click);
             // 
+            // labelInsertedDisplay
+            // 
+            this.labelInsertedDisplay.AutoSize = true;
+            this.labelInsertedDisplay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.labelInsertedDisplay.Location = new System.Drawing.Point(443, 55);
+            this.labelInsertedDisplay.Name = "labelInsertedDisplay";
+            this.labelInsertedDisplay.Size = new System.Drawing.Size(15, 15);
+            this.labelInsertedDisplay.TabIndex = 15;
+            this.labelInsertedDisplay.Text = "0";
+            this.labelInsertedDisplay.Click += new System.EventHandler(this.labelInsertedDisplay_Click);
+            // 
             // pictureYellow
             // 
-            this.pictureYellow.Image = global::Lesson6WindowsForms.Properties.Resources.Yellow1;
+            this.pictureYellow.Image = global::Lesson6WindowsForms.Properties.Resources.Lemon;
             this.pictureYellow.InitialImage = null;
-            this.pictureYellow.Location = new System.Drawing.Point(537, 179);
+            this.pictureYellow.Location = new System.Drawing.Point(536, 179);
             this.pictureYellow.Name = "pictureYellow";
             this.pictureYellow.Size = new System.Drawing.Size(217, 361);
             this.pictureYellow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -196,17 +208,6 @@
             this.pictureRegular.TabStop = false;
             this.pictureRegular.Click += new System.EventHandler(this.pictureRegular_Click);
             // 
-            // labelInsertedDisplay
-            // 
-            this.labelInsertedDisplay.AutoSize = true;
-            this.labelInsertedDisplay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.labelInsertedDisplay.Location = new System.Drawing.Point(443, 55);
-            this.labelInsertedDisplay.Name = "labelInsertedDisplay";
-            this.labelInsertedDisplay.Size = new System.Drawing.Size(15, 15);
-            this.labelInsertedDisplay.TabIndex = 15;
-            this.labelInsertedDisplay.Text = "0";
-            this.labelInsertedDisplay.Click += new System.EventHandler(this.labelInsertedDisplay_Click);
-            // 
             // SodaVendingMachine
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -229,6 +230,7 @@
             this.Controls.Add(this.labelInsertCoins);
             this.Name = "SodaVendingMachine";
             this.Text = "SodaVendingMachine";
+            this.Load += new System.EventHandler(this.SodaVendingMachine_load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureYellow)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureOrange)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureRegular)).EndInit();

@@ -63,6 +63,16 @@ namespace Lesson6WindowsForms.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Lemon {
+            get {
+                object obj = ResourceManager.GetObject("Lemon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Orange {
             get {
                 object obj = ResourceManager.GetObject("Orange", resourceCulture);
@@ -76,16 +86,6 @@ namespace Lesson6WindowsForms.Properties {
         internal static System.Drawing.Bitmap Regular {
             get {
                 object obj = ResourceManager.GetObject("Regular", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Yellow1 {
-            get {
-                object obj = ResourceManager.GetObject("Yellow1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

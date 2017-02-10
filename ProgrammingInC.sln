@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson4Excercise", "Lesson4
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson6ConsoleAsLibrary", "Lesson6ConsoleAsLibrary\Lesson6ConsoleAsLibrary.csproj", "{0BD4FD20-05CF-41B6-991C-CB1DD6DFBBBA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson7ClassNotes", "Lesson7WindowsApplication\Lesson7ClassNotes.csproj", "{582D09FC-1C08-47A5-BBE5-11AF90755315}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson6ClassNotes", "Lesson7WindowsApplication\Lesson6ClassNotes.csproj", "{582D09FC-1C08-47A5-BBE5-11AF90755315}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson6SodaVendingMachineWFA", "Lesson6WindowsForms\Lesson6SodaVendingMachineWFA.csproj", "{3F2A0908-0539-4323-BA13-1827FE51ABFA}"
 EndProject
