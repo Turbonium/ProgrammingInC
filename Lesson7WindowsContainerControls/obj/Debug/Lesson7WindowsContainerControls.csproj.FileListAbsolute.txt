@@ -1,0 +1,11 @@
+C:\Source\Repos\ProgrammingInC\Lesson7WindowsContainerControls\bin\Debug\Lesson7WindowsContainerControls.exe.config
+C:\Source\Repos\ProgrammingInC\Lesson7WindowsContainerControls\bin\Debug\Lesson7WindowsContainerControls.exe
+C:\Source\Repos\ProgrammingInC\Lesson7WindowsContainerControls\bin\Debug\Lesson7WindowsContainerControls.pdb
+C:\Source\Repos\ProgrammingInC\Lesson7WindowsContainerControls\bin\Debug\Lesson6ConsoleAsLibrary.exe
+C:\Source\Repos\ProgrammingInC\Lesson7WindowsContainerControls\bin\Debug\Lesson6ConsoleAsLibrary.pdb
+C:\Source\Repos\ProgrammingInC\Lesson7WindowsContainerControls\obj\Debug\Lesson7WindowsContainerControls.csprojResolveAssemblyReference.cache
+C:\Source\Repos\ProgrammingInC\Lesson7WindowsContainerControls\obj\Debug\Lesson7WindowsContainerControls.SodaVendingMachine.resources
+C:\Source\Repos\ProgrammingInC\Lesson7WindowsContainerControls\obj\Debug\Lesson7WindowsContainerControls.Properties.Resources.resources
+C:\Source\Repos\ProgrammingInC\Lesson7WindowsContainerControls\obj\Debug\Lesson7WindowsContainerControls.csproj.GenerateResource.Cache
+C:\Source\Repos\ProgrammingInC\Lesson7WindowsContainerControls\obj\Debug\Lesson7WindowsContainerControls.exe
+C:\Source\Repos\ProgrammingInC\Lesson7WindowsContainerControls\obj\Debug\Lesson7WindowsContainerControls.pdb

@@ -1,0 +1,6 @@
+C:\Source\Repos\ProgrammingInC\Lesson3Coin\bin\Debug\Lesson3Coin.exe.config
+C:\Source\Repos\ProgrammingInC\Lesson3Coin\bin\Debug\Lesson3Coin.exe
+C:\Source\Repos\ProgrammingInC\Lesson3Coin\bin\Debug\Lesson3Coin.pdb
+C:\Source\Repos\ProgrammingInC\Lesson3Coin\obj\Debug\Lesson3Coin.csprojResolveAssemblyReference.cache
+C:\Source\Repos\ProgrammingInC\Lesson3Coin\obj\Debug\Lesson3Coin.exe
+C:\Source\Repos\ProgrammingInC\Lesson3Coin\obj\Debug\Lesson3Coin.pdb

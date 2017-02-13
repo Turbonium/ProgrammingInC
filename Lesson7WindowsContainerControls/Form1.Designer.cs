@@ -174,7 +174,7 @@
             // 
             // pictureYellow
             // 
-            this.pictureYellow.Image = global::Lesson7WindowsContainerControls.Properties.Resources.Lemon;
+            this.pictureYellow.Image = global::Lesson7WindowsContainerControls.Properties.Resources.Lemon1;
             this.pictureYellow.InitialImage = null;
             this.pictureYellow.Location = new System.Drawing.Point(536, 179);
             this.pictureYellow.Name = "pictureYellow";

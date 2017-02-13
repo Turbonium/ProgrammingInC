@@ -19,3 +19,6 @@ C:\Source\ProgrammingInC\Lesson2Excercise\bin\Debug\Lesson2Excercise.pdb
 C:\Source\Repos\ProgrammingInC\Lesson2Excercise\bin\Debug\Lesson2Excercise.exe.config
 C:\Source\Repos\ProgrammingInC\Lesson2Excercise\obj\Debug\Lesson2Excercise.exe
 C:\Source\Repos\ProgrammingInC\Lesson2Excercise\obj\Debug\Lesson2Excercise.pdb
+C:\Source\Repos\ProgrammingInC\Lesson2Excercise\bin\Debug\Lesson2Excercise.exe
+C:\Source\Repos\ProgrammingInC\Lesson2Excercise\bin\Debug\Lesson2Excercise.pdb
+C:\Source\Repos\ProgrammingInC\Lesson2Excercise\obj\Debug\Lesson2Excercise.csprojResolveAssemblyReference.cache
