@@ -1,0 +1,24 @@
+﻿7. Common Windows Controls
+Exercise 07-1 Add a Vending Machine Service tab
+    1. Modify the Windows Forms Application Vending Machine to include a tab control that allows the users to switch back and forth between using the vending machine as a customer and as a vending machine worker.
+    2. Create a tab control. The first tab will be labeled “Vend” and will contain all of the controls from the previous exercise. The second tab will be labeled “Service” and will contain
+    controls that will allow the vending machine worker to service the machine: 
+        2.1. A ListView or ListBox control that allows the worker to see how many cans of each
+        flavor are left in the machine 
+        2.2. A button that allows the worker to refill the can rack 
+        2.3. A ListView or ListBox control that allows the worker to see how much money is in the vending machine 
+        2.4. A button that allows the worker to empty the coin box 
+    3. Drag-and-drop the vending controls to the Vend tab of the tab control. 
+    4. In the Service tab, use a GroupBox control to hold the List control that displays the number of cans of each flavor and the button that allows the worker to fill the can rack. 
+    5. Create another GroupBox to hold the List control that displays the contents (number of each type of coin, value of each type of coin, and total value of coins in the box) of the coin box. The button that allows the worker to empty the coin box also goes in this GroupBox. 
+    6. Use the Click event of the TabControl control or the TabPage control to assure that the data in the Service tab is up-to-date. In other words, if the machine is being serviced and the worker goes back to the Vend tab, inserts money into the machine, and then returns to the Service tab, the data in the Service tab should reflect that change.
+Suggestions
+    7. Use a ListView control with ListViewItem objects to create columns to display the can and coin information. ListView contents can be added to using the ListView.Items.Add() method, and column data can be created using the ListViewItem.SubItems.Add() method. Right-click
+    on the control and select “Edit Columns …” to add column headers. Don’t forget to set the
+    View property to “Details”. 
+
+OPTIONAL -------------------------
+Password Protection
+8. Of course we don’t want everyone to be able to service the vending machine, so add to the
+Service tab a label, textbox, and button. These controls will function to password protect the machine. When the worker first clicks on the Service tab, only the password challenge should
+
