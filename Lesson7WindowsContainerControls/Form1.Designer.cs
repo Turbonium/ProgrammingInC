@@ -44,16 +44,21 @@
             this.pictureYellow = new System.Windows.Forms.PictureBox();
             this.pictureOrange = new System.Windows.Forms.PictureBox();
             this.pictureRegular = new System.Windows.Forms.PictureBox();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabVend = new System.Windows.Forms.TabPage();
+            this.tabService = new System.Windows.Forms.TabPage();
             ((System.ComponentModel.ISupportInitialize)(this.pictureYellow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureOrange)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureRegular)).BeginInit();
+            this.tabControl1.SuspendLayout();
+            this.tabVend.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelInsertCoins
             // 
             this.labelInsertCoins.AutoSize = true;
             this.labelInsertCoins.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelInsertCoins.Location = new System.Drawing.Point(28, 36);
+            this.labelInsertCoins.Location = new System.Drawing.Point(6, 16);
             this.labelInsertCoins.Name = "labelInsertCoins";
             this.labelInsertCoins.Size = new System.Drawing.Size(229, 16);
             this.labelInsertCoins.TabIndex = 0;
@@ -64,7 +69,7 @@
             // 
             this.labelSodaCost.AutoSize = true;
             this.labelSodaCost.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSodaCost.Location = new System.Drawing.Point(323, 23);
+            this.labelSodaCost.Location = new System.Drawing.Point(262, 17);
             this.labelSodaCost.Name = "labelSodaCost";
             this.labelSodaCost.Size = new System.Drawing.Size(152, 15);
             this.labelSodaCost.TabIndex = 1;
@@ -74,7 +79,7 @@
             // labelTotalAmountInserted
             // 
             this.labelTotalAmountInserted.AutoSize = true;
-            this.labelTotalAmountInserted.Location = new System.Drawing.Point(323, 55);
+            this.labelTotalAmountInserted.Location = new System.Drawing.Point(262, 42);
             this.labelTotalAmountInserted.Name = "labelTotalAmountInserted";
             this.labelTotalAmountInserted.Size = new System.Drawing.Size(114, 13);
             this.labelTotalAmountInserted.TabIndex = 2;
@@ -83,7 +88,7 @@
             // 
             // buttonCoinReturn
             // 
-            this.buttonCoinReturn.Location = new System.Drawing.Point(36, 620);
+            this.buttonCoinReturn.Location = new System.Drawing.Point(437, 42);
             this.buttonCoinReturn.Name = "buttonCoinReturn";
             this.buttonCoinReturn.Size = new System.Drawing.Size(75, 23);
             this.buttonCoinReturn.TabIndex = 6;
@@ -93,7 +98,7 @@
             // 
             // buttonNickel
             // 
-            this.buttonNickel.Location = new System.Drawing.Point(36, 101);
+            this.buttonNickel.Location = new System.Drawing.Point(9, 92);
             this.buttonNickel.Name = "buttonNickel";
             this.buttonNickel.Size = new System.Drawing.Size(75, 23);
             this.buttonNickel.TabIndex = 7;
@@ -103,7 +108,7 @@
             // 
             // buttonRegular
             // 
-            this.buttonRegular.Location = new System.Drawing.Point(112, 546);
+            this.buttonRegular.Location = new System.Drawing.Point(130, 550);
             this.buttonRegular.Name = "buttonRegular";
             this.buttonRegular.Size = new System.Drawing.Size(75, 23);
             this.buttonRegular.TabIndex = 8;
@@ -113,7 +118,7 @@
             // 
             // buttonOrange
             // 
-            this.buttonOrange.Location = new System.Drawing.Point(362, 546);
+            this.buttonOrange.Location = new System.Drawing.Point(393, 550);
             this.buttonOrange.Name = "buttonOrange";
             this.buttonOrange.Size = new System.Drawing.Size(75, 23);
             this.buttonOrange.TabIndex = 9;
@@ -123,7 +128,7 @@
             // 
             // buttonYellow
             // 
-            this.buttonYellow.Location = new System.Drawing.Point(616, 546);
+            this.buttonYellow.Location = new System.Drawing.Point(648, 550);
             this.buttonYellow.Name = "buttonYellow";
             this.buttonYellow.Size = new System.Drawing.Size(75, 23);
             this.buttonYellow.TabIndex = 10;
@@ -133,7 +138,7 @@
             // 
             // buttonDime
             // 
-            this.buttonDime.Location = new System.Drawing.Point(152, 100);
+            this.buttonDime.Location = new System.Drawing.Point(87, 92);
             this.buttonDime.Name = "buttonDime";
             this.buttonDime.Size = new System.Drawing.Size(75, 23);
             this.buttonDime.TabIndex = 11;
@@ -143,7 +148,7 @@
             // 
             // buttonQuarter
             // 
-            this.buttonQuarter.Location = new System.Drawing.Point(266, 100);
+            this.buttonQuarter.Location = new System.Drawing.Point(168, 92);
             this.buttonQuarter.Name = "buttonQuarter";
             this.buttonQuarter.Size = new System.Drawing.Size(75, 23);
             this.buttonQuarter.TabIndex = 12;
@@ -153,7 +158,7 @@
             // 
             // buttonHalfDollar
             // 
-            this.buttonHalfDollar.Location = new System.Drawing.Point(372, 100);
+            this.buttonHalfDollar.Location = new System.Drawing.Point(249, 92);
             this.buttonHalfDollar.Name = "buttonHalfDollar";
             this.buttonHalfDollar.Size = new System.Drawing.Size(75, 23);
             this.buttonHalfDollar.TabIndex = 13;
@@ -165,7 +170,7 @@
             // 
             this.labelInsertedDisplay.AutoSize = true;
             this.labelInsertedDisplay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.labelInsertedDisplay.Location = new System.Drawing.Point(443, 55);
+            this.labelInsertedDisplay.Location = new System.Drawing.Point(399, 42);
             this.labelInsertedDisplay.Name = "labelInsertedDisplay";
             this.labelInsertedDisplay.Size = new System.Drawing.Size(15, 15);
             this.labelInsertedDisplay.TabIndex = 15;
@@ -176,7 +181,7 @@
             // 
             this.pictureYellow.Image = global::Lesson7WindowsContainerControls.Properties.Resources.Lemon1;
             this.pictureYellow.InitialImage = null;
-            this.pictureYellow.Location = new System.Drawing.Point(536, 179);
+            this.pictureYellow.Location = new System.Drawing.Point(570, 183);
             this.pictureYellow.Name = "pictureYellow";
             this.pictureYellow.Size = new System.Drawing.Size(217, 361);
             this.pictureYellow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -188,7 +193,7 @@
             // 
             this.pictureOrange.Image = global::Lesson7WindowsContainerControls.Properties.Resources.Orange;
             this.pictureOrange.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureOrange.InitialImage")));
-            this.pictureOrange.Location = new System.Drawing.Point(275, 179);
+            this.pictureOrange.Location = new System.Drawing.Point(302, 183);
             this.pictureOrange.Name = "pictureOrange";
             this.pictureOrange.Size = new System.Drawing.Size(243, 361);
             this.pictureOrange.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -200,7 +205,7 @@
             // 
             this.pictureRegular.Image = global::Lesson7WindowsContainerControls.Properties.Resources.Regular;
             this.pictureRegular.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureRegular.InitialImage")));
-            this.pictureRegular.Location = new System.Drawing.Point(36, 179);
+            this.pictureRegular.Location = new System.Drawing.Point(58, 183);
             this.pictureRegular.Name = "pictureRegular";
             this.pictureRegular.Size = new System.Drawing.Size(221, 361);
             this.pictureRegular.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -208,34 +213,67 @@
             this.pictureRegular.TabStop = false;
             this.pictureRegular.Click += new System.EventHandler(this.pictureRegular_Click);
             // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabVend);
+            this.tabControl1.Controls.Add(this.tabService);
+            this.tabControl1.Location = new System.Drawing.Point(2, 12);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(922, 654);
+            this.tabControl1.TabIndex = 16;
+            // 
+            // tabVend
+            // 
+            this.tabVend.Controls.Add(this.labelInsertedDisplay);
+            this.tabVend.Controls.Add(this.buttonCoinReturn);
+            this.tabVend.Controls.Add(this.buttonRegular);
+            this.tabVend.Controls.Add(this.labelInsertCoins);
+            this.tabVend.Controls.Add(this.buttonNickel);
+            this.tabVend.Controls.Add(this.buttonYellow);
+            this.tabVend.Controls.Add(this.buttonOrange);
+            this.tabVend.Controls.Add(this.buttonHalfDollar);
+            this.tabVend.Controls.Add(this.pictureYellow);
+            this.tabVend.Controls.Add(this.pictureRegular);
+            this.tabVend.Controls.Add(this.labelSodaCost);
+            this.tabVend.Controls.Add(this.pictureOrange);
+            this.tabVend.Controls.Add(this.buttonDime);
+            this.tabVend.Controls.Add(this.labelTotalAmountInserted);
+            this.tabVend.Controls.Add(this.buttonQuarter);
+            this.tabVend.Location = new System.Drawing.Point(4, 22);
+            this.tabVend.Name = "tabVend";
+            this.tabVend.Padding = new System.Windows.Forms.Padding(3);
+            this.tabVend.Size = new System.Drawing.Size(914, 628);
+            this.tabVend.TabIndex = 0;
+            this.tabVend.Text = "Vend";
+            this.tabVend.UseVisualStyleBackColor = true;
+            // 
+            // tabService
+            // 
+            this.tabService.Location = new System.Drawing.Point(4, 22);
+            this.tabService.Name = "tabService";
+            this.tabService.Padding = new System.Windows.Forms.Padding(3);
+            this.tabService.Size = new System.Drawing.Size(914, 628);
+            this.tabService.TabIndex = 1;
+            this.tabService.Text = "Service";
+            this.tabService.UseVisualStyleBackColor = true;
+            // 
             // SodaVendingMachine
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(936, 678);
-            this.Controls.Add(this.labelInsertedDisplay);
-            this.Controls.Add(this.buttonHalfDollar);
-            this.Controls.Add(this.buttonQuarter);
-            this.Controls.Add(this.buttonDime);
-            this.Controls.Add(this.buttonYellow);
-            this.Controls.Add(this.buttonOrange);
-            this.Controls.Add(this.buttonRegular);
-            this.Controls.Add(this.buttonNickel);
-            this.Controls.Add(this.buttonCoinReturn);
-            this.Controls.Add(this.pictureYellow);
-            this.Controls.Add(this.pictureOrange);
-            this.Controls.Add(this.pictureRegular);
-            this.Controls.Add(this.labelTotalAmountInserted);
-            this.Controls.Add(this.labelSodaCost);
-            this.Controls.Add(this.labelInsertCoins);
+            this.Controls.Add(this.tabControl1);
             this.Name = "SodaVendingMachine";
             this.Text = "SodaVendingMachine";
             this.Load += new System.EventHandler(this.SodaVendingMachine_load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureYellow)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureOrange)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureRegular)).EndInit();
+            this.tabControl1.ResumeLayout(false);
+            this.tabVend.ResumeLayout(false);
+            this.tabVend.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -256,6 +294,9 @@
         private System.Windows.Forms.Button buttonQuarter;
         private System.Windows.Forms.Button buttonHalfDollar;
         private System.Windows.Forms.Label labelInsertedDisplay;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabVend;
+        private System.Windows.Forms.TabPage tabService;
     }
 }
 
