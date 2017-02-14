@@ -208,6 +208,31 @@ namespace Lesson7WindowsContainerControls
             }
         }
 
+        private void constructCoinBoxDisplay(ListView CoinBoxDisplay, CoinBox CoinBoxToDisplay)
+        {
+            CoinBoxDisplay.Items.Clear();
+            List<Coin.Denomination> reverseCoinList = new List<Coin.Denomination>(Coin.AllDenominations);
+            reverseCoinList.Reverse();
+
+            foreach (Coin.Denomination coinDenomination in reverseCoinList)
+            {
+                int coinCount = CoinBoxToDisplay.coinCount(coinDenomination);
+                decimal coinsValue = coinCount * Coin.ValueOfCoin(coinDenomination);
+                ListViewItem coinRow = new ListViewItem(coinDenomination.ToString());
+                coinRow.SubItems.Add(coinCount.ToString());
+                coinRow.SubItems.Add(string.Format("{0:c}", coinsValue));
+                CoinBoxDisplay.Items.Add(coinRow);
+            }
+
+            ListViewItem totalRow = new ListViewItem("Total");
+            totalRow.SubItems.Add(string.Empty);
+            totalRow.SubItems.Add(string.Format("{0:c}",
+                CoinBoxToDisplay.ValueOf));
+            CoinBoxDisplay.Items.Add(totalRow);
+        }
+
+
+
         private void buttonFillRack_Click(object sender, EventArgs e)
         {
             canRack.FillTheCanRack();
@@ -216,6 +241,27 @@ namespace Lesson7WindowsContainerControls
         private void tabService_Click(object sender, EventArgs e)
         {
             constructRackDisplay();
+            constructCoinBoxDisplay(listViewPrimaryCoinBox, primaryCoinBox);
+            constructCoinBoxDisplay(listViewTempCoinBox, tempCoinBox);
+        }
+
+        private void buttonPrimaryCoinEmpty_Click(object sender, EventArgs e)
+        {
+            primaryCoinBox.Withdraw(primaryCoinBox.ValueOf);
+            constructCoinBoxDisplay(listViewPrimaryCoinBox, primaryCoinBox);
+        }
+
+        private void buttonEmptyTempCoins_Click(object sender, EventArgs e)
+        {
+            tempCoinBox.Withdraw(tempCoinBox.ValueOf);
+            constructCoinBoxDisplay(listViewTempCoinBox, tempCoinBox);
+            updateInsertedTotal();
+
+        }
+
+        private void listViewPrimaryCoinBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
