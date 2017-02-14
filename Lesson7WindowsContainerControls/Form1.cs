@@ -193,5 +193,29 @@ namespace Lesson7WindowsContainerControls
         private void labelInsertedDisplay_Click(object sender, EventArgs e)
         {
         }
+
+        //Service Layer
+        private void constructRackDisplay()
+        {
+
+            listViewRack.Items.Clear();
+
+            foreach (Flavor aFlavor in FlavorOps.AllFlavors)
+            {
+                ListViewItem row = new ListViewItem(aFlavor.ToString());
+                row.SubItems.Add(canRack[aFlavor].ToString());
+                listViewRack.Items.Add(row);
+            }
+        }
+
+        private void buttonFillRack_Click(object sender, EventArgs e)
+        {
+            canRack.FillTheCanRack();
+        }
+
+        private void tabService_Click(object sender, EventArgs e)
+        {
+            constructRackDisplay();
+        }
     }
 }

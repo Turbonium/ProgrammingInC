@@ -47,11 +47,18 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabVend = new System.Windows.Forms.TabPage();
             this.tabService = new System.Windows.Forms.TabPage();
+            this.groupRack = new System.Windows.Forms.GroupBox();
+            this.listViewRack = new System.Windows.Forms.ListView();
+            this.chRackFlavor = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.chRackRemaining = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.buttonFillRack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureYellow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureOrange)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureRegular)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabVend.SuspendLayout();
+            this.tabService.SuspendLayout();
+            this.groupRack.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelInsertCoins
@@ -222,6 +229,7 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(922, 654);
             this.tabControl1.TabIndex = 16;
+            this.tabControl1.Click += new System.EventHandler(this.tabService_Click);
             // 
             // tabVend
             // 
@@ -250,6 +258,7 @@
             // 
             // tabService
             // 
+            this.tabService.Controls.Add(this.groupRack);
             this.tabService.Location = new System.Drawing.Point(4, 22);
             this.tabService.Name = "tabService";
             this.tabService.Padding = new System.Windows.Forms.Padding(3);
@@ -257,6 +266,50 @@
             this.tabService.TabIndex = 1;
             this.tabService.Text = "Service";
             this.tabService.UseVisualStyleBackColor = true;
+            // 
+            // groupRack
+            // 
+            this.groupRack.Controls.Add(this.buttonFillRack);
+            this.groupRack.Controls.Add(this.listViewRack);
+            this.groupRack.Location = new System.Drawing.Point(25, 23);
+            this.groupRack.Name = "groupRack";
+            this.groupRack.Size = new System.Drawing.Size(255, 193);
+            this.groupRack.TabIndex = 0;
+            this.groupRack.TabStop = false;
+            this.groupRack.Text = "Rack";
+            // 
+            // listViewRack
+            // 
+            this.listViewRack.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.chRackFlavor,
+            this.chRackRemaining});
+            this.listViewRack.GridLines = true;
+            this.listViewRack.Location = new System.Drawing.Point(7, 20);
+            this.listViewRack.Name = "listViewRack";
+            this.listViewRack.Size = new System.Drawing.Size(242, 108);
+            this.listViewRack.TabIndex = 0;
+            this.listViewRack.UseCompatibleStateImageBehavior = false;
+            this.listViewRack.View = System.Windows.Forms.View.Details;
+            // 
+            // chRackFlavor
+            // 
+            this.chRackFlavor.Text = "Flavor";
+            this.chRackFlavor.Width = 119;
+            // 
+            // chRackRemaining
+            // 
+            this.chRackRemaining.Text = "Remaining Cans";
+            this.chRackRemaining.Width = 118;
+            // 
+            // buttonFillRack
+            // 
+            this.buttonFillRack.Location = new System.Drawing.Point(44, 135);
+            this.buttonFillRack.Name = "buttonFillRack";
+            this.buttonFillRack.Size = new System.Drawing.Size(149, 23);
+            this.buttonFillRack.TabIndex = 1;
+            this.buttonFillRack.Text = "Fill The Rack";
+            this.buttonFillRack.UseVisualStyleBackColor = true;
+            this.buttonFillRack.Click += new System.EventHandler(this.buttonFillRack_Click);
             // 
             // SodaVendingMachine
             // 
@@ -273,6 +326,8 @@
             this.tabControl1.ResumeLayout(false);
             this.tabVend.ResumeLayout(false);
             this.tabVend.PerformLayout();
+            this.tabService.ResumeLayout(false);
+            this.groupRack.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -297,6 +352,11 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabVend;
         private System.Windows.Forms.TabPage tabService;
+        private System.Windows.Forms.GroupBox groupRack;
+        private System.Windows.Forms.Button buttonFillRack;
+        private System.Windows.Forms.ListView listViewRack;
+        private System.Windows.Forms.ColumnHeader chRackFlavor;
+        private System.Windows.Forms.ColumnHeader chRackRemaining;
     }
 }
 
