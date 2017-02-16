@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Lesson7WindowsContainerControls
+namespace Lesson8MenusMDIFiles
 {
     static class Program
     {

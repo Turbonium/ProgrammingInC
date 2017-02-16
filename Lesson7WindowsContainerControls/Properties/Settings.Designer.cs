@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Lesson7WindowsContainerControls.Properties
+namespace Lesson8MenusMDIFiles.Properties
 {
 
 

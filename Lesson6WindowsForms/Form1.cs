@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using Lesson6ConsoleAsLibrary;
 using System.Diagnostics;
 
-namespace Lesson7WindowsContainerControls
+namespace Lesson8MenusMDIFiles
 {
     public partial class SodaVendingMachine : Form
     {

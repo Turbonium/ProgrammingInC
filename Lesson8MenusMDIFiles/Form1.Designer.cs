@@ -47,31 +47,31 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabVend = new System.Windows.Forms.TabPage();
             this.tabService = new System.Windows.Forms.TabPage();
-            this.groupRack = new System.Windows.Forms.GroupBox();
-            this.listViewRack = new System.Windows.Forms.ListView();
-            this.chRackFlavor = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.chRackRemaining = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.buttonFillRack = new System.Windows.Forms.Button();
             this.groupCoinBox = new System.Windows.Forms.GroupBox();
-            this.listViewPrimaryCoinBox = new System.Windows.Forms.ListView();
-            this.labelMainCoinBox = new System.Windows.Forms.Label();
-            this.chPrimaryCoins = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.chPrimaryCoinCount = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.chPrimaryCoinValue = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.buttonPrimaryCoinEmpty = new System.Windows.Forms.Button();
+            this.buttonEmptyTempCoins = new System.Windows.Forms.Button();
             this.listViewTempCoinBox = new System.Windows.Forms.ListView();
             this.chTempCoins = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chTempCoinsCount = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chTempCoinAmount = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.buttonEmptyTempCoins = new System.Windows.Forms.Button();
+            this.buttonPrimaryCoinEmpty = new System.Windows.Forms.Button();
+            this.labelMainCoinBox = new System.Windows.Forms.Label();
+            this.listViewPrimaryCoinBox = new System.Windows.Forms.ListView();
+            this.chPrimaryCoins = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.chPrimaryCoinCount = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.chPrimaryCoinValue = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.groupRack = new System.Windows.Forms.GroupBox();
+            this.buttonFillRack = new System.Windows.Forms.Button();
+            this.listViewRack = new System.Windows.Forms.ListView();
+            this.chRackFlavor = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.chRackRemaining = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             ((System.ComponentModel.ISupportInitialize)(this.pictureYellow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureOrange)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureRegular)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabVend.SuspendLayout();
             this.tabService.SuspendLayout();
-            this.groupRack.SuspendLayout();
             this.groupCoinBox.SuspendLayout();
+            this.groupRack.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelInsertCoins
@@ -199,7 +199,7 @@
             // 
             // pictureYellow
             // 
-            this.pictureYellow.Image = global::Lesson8MenusMDIFiles.Properties.Resources.Lemon1;
+            this.pictureYellow.Image = global::Lesson8MenusMDIFiles.Properties.Resources.Lemon;
             this.pictureYellow.InitialImage = null;
             this.pictureYellow.Location = new System.Drawing.Point(570, 183);
             this.pictureYellow.Name = "pictureYellow";
@@ -212,7 +212,7 @@
             // pictureOrange
             // 
             this.pictureOrange.Image = global::Lesson8MenusMDIFiles.Properties.Resources.Orange;
-            this.pictureOrange.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureOrange.InitialImage")));
+            this.pictureOrange.InitialImage = null;
             this.pictureOrange.Location = new System.Drawing.Point(302, 183);
             this.pictureOrange.Name = "pictureOrange";
             this.pictureOrange.Size = new System.Drawing.Size(243, 361);
@@ -224,7 +224,7 @@
             // pictureRegular
             // 
             this.pictureRegular.Image = global::Lesson8MenusMDIFiles.Properties.Resources.Regular;
-            this.pictureRegular.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureRegular.InitialImage")));
+            this.pictureRegular.InitialImage = null;
             this.pictureRegular.Location = new System.Drawing.Point(58, 183);
             this.pictureRegular.Name = "pictureRegular";
             this.pictureRegular.Size = new System.Drawing.Size(221, 361);
@@ -281,50 +281,6 @@
             this.tabService.Text = "Service";
             this.tabService.UseVisualStyleBackColor = true;
             // 
-            // groupRack
-            // 
-            this.groupRack.Controls.Add(this.buttonFillRack);
-            this.groupRack.Controls.Add(this.listViewRack);
-            this.groupRack.Location = new System.Drawing.Point(25, 23);
-            this.groupRack.Name = "groupRack";
-            this.groupRack.Size = new System.Drawing.Size(255, 193);
-            this.groupRack.TabIndex = 0;
-            this.groupRack.TabStop = false;
-            this.groupRack.Text = "Rack";
-            // 
-            // listViewRack
-            // 
-            this.listViewRack.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.chRackFlavor,
-            this.chRackRemaining});
-            this.listViewRack.GridLines = true;
-            this.listViewRack.Location = new System.Drawing.Point(7, 20);
-            this.listViewRack.Name = "listViewRack";
-            this.listViewRack.Size = new System.Drawing.Size(242, 108);
-            this.listViewRack.TabIndex = 0;
-            this.listViewRack.UseCompatibleStateImageBehavior = false;
-            this.listViewRack.View = System.Windows.Forms.View.Details;
-            // 
-            // chRackFlavor
-            // 
-            this.chRackFlavor.Text = "Flavor";
-            this.chRackFlavor.Width = 119;
-            // 
-            // chRackRemaining
-            // 
-            this.chRackRemaining.Text = "Remaining Cans";
-            this.chRackRemaining.Width = 118;
-            // 
-            // buttonFillRack
-            // 
-            this.buttonFillRack.Location = new System.Drawing.Point(44, 135);
-            this.buttonFillRack.Name = "buttonFillRack";
-            this.buttonFillRack.Size = new System.Drawing.Size(149, 23);
-            this.buttonFillRack.TabIndex = 1;
-            this.buttonFillRack.Text = "Fill The Rack";
-            this.buttonFillRack.UseVisualStyleBackColor = true;
-            this.buttonFillRack.Click += new System.EventHandler(this.buttonFillRack_Click);
-            // 
             // groupCoinBox
             // 
             this.groupCoinBox.Controls.Add(this.buttonEmptyTempCoins);
@@ -339,54 +295,15 @@
             this.groupCoinBox.TabStop = false;
             this.groupCoinBox.Text = "Coin Box Controls";
             // 
-            // listViewPrimaryCoinBox
+            // buttonEmptyTempCoins
             // 
-            this.listViewPrimaryCoinBox.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.chPrimaryCoins,
-            this.chPrimaryCoinCount,
-            this.chPrimaryCoinValue});
-            this.listViewPrimaryCoinBox.GridLines = true;
-            this.listViewPrimaryCoinBox.Location = new System.Drawing.Point(25, 66);
-            this.listViewPrimaryCoinBox.Name = "listViewPrimaryCoinBox";
-            this.listViewPrimaryCoinBox.Size = new System.Drawing.Size(275, 153);
-            this.listViewPrimaryCoinBox.TabIndex = 0;
-            this.listViewPrimaryCoinBox.UseCompatibleStateImageBehavior = false;
-            this.listViewPrimaryCoinBox.View = System.Windows.Forms.View.Details;
-            this.listViewPrimaryCoinBox.SelectedIndexChanged += new System.EventHandler(this.listViewPrimaryCoinBox_SelectedIndexChanged);
-            // 
-            // labelMainCoinBox
-            // 
-            this.labelMainCoinBox.AutoSize = true;
-            this.labelMainCoinBox.Location = new System.Drawing.Point(25, 47);
-            this.labelMainCoinBox.Name = "labelMainCoinBox";
-            this.labelMainCoinBox.Size = new System.Drawing.Size(135, 13);
-            this.labelMainCoinBox.TabIndex = 1;
-            this.labelMainCoinBox.Text = "Vending Machine Coin Box";
-            // 
-            // chPrimaryCoins
-            // 
-            this.chPrimaryCoins.Text = "Coins";
-            this.chPrimaryCoins.Width = 101;
-            // 
-            // chPrimaryCoinCount
-            // 
-            this.chPrimaryCoinCount.Text = "# Of Coins";
-            this.chPrimaryCoinCount.Width = 92;
-            // 
-            // chPrimaryCoinValue
-            // 
-            this.chPrimaryCoinValue.Text = "Amount";
-            this.chPrimaryCoinValue.Width = 88;
-            // 
-            // buttonPrimaryCoinEmpty
-            // 
-            this.buttonPrimaryCoinEmpty.Location = new System.Drawing.Point(58, 225);
-            this.buttonPrimaryCoinEmpty.Name = "buttonPrimaryCoinEmpty";
-            this.buttonPrimaryCoinEmpty.Size = new System.Drawing.Size(214, 40);
-            this.buttonPrimaryCoinEmpty.TabIndex = 2;
-            this.buttonPrimaryCoinEmpty.Text = "Empty Vending Machine Coin Box";
-            this.buttonPrimaryCoinEmpty.UseVisualStyleBackColor = true;
-            this.buttonPrimaryCoinEmpty.Click += new System.EventHandler(this.buttonPrimaryCoinEmpty_Click);
+            this.buttonEmptyTempCoins.Location = new System.Drawing.Point(58, 456);
+            this.buttonEmptyTempCoins.Name = "buttonEmptyTempCoins";
+            this.buttonEmptyTempCoins.Size = new System.Drawing.Size(214, 40);
+            this.buttonEmptyTempCoins.TabIndex = 4;
+            this.buttonEmptyTempCoins.Text = "Empty Customer Coin Box";
+            this.buttonEmptyTempCoins.UseVisualStyleBackColor = true;
+            this.buttonEmptyTempCoins.Click += new System.EventHandler(this.buttonEmptyTempCoins_Click);
             // 
             // listViewTempCoinBox
             // 
@@ -417,15 +334,98 @@
             this.chTempCoinAmount.Text = "Amount";
             this.chTempCoinAmount.Width = 88;
             // 
-            // buttonEmptyTempCoins
+            // buttonPrimaryCoinEmpty
             // 
-            this.buttonEmptyTempCoins.Location = new System.Drawing.Point(58, 456);
-            this.buttonEmptyTempCoins.Name = "buttonEmptyTempCoins";
-            this.buttonEmptyTempCoins.Size = new System.Drawing.Size(214, 40);
-            this.buttonEmptyTempCoins.TabIndex = 4;
-            this.buttonEmptyTempCoins.Text = "Empty Customer Coin Box";
-            this.buttonEmptyTempCoins.UseVisualStyleBackColor = true;
-            this.buttonEmptyTempCoins.Click += new System.EventHandler(this.buttonEmptyTempCoins_Click);
+            this.buttonPrimaryCoinEmpty.Location = new System.Drawing.Point(58, 225);
+            this.buttonPrimaryCoinEmpty.Name = "buttonPrimaryCoinEmpty";
+            this.buttonPrimaryCoinEmpty.Size = new System.Drawing.Size(214, 40);
+            this.buttonPrimaryCoinEmpty.TabIndex = 2;
+            this.buttonPrimaryCoinEmpty.Text = "Empty Vending Machine Coin Box";
+            this.buttonPrimaryCoinEmpty.UseVisualStyleBackColor = true;
+            this.buttonPrimaryCoinEmpty.Click += new System.EventHandler(this.buttonPrimaryCoinEmpty_Click);
+            // 
+            // labelMainCoinBox
+            // 
+            this.labelMainCoinBox.AutoSize = true;
+            this.labelMainCoinBox.Location = new System.Drawing.Point(25, 47);
+            this.labelMainCoinBox.Name = "labelMainCoinBox";
+            this.labelMainCoinBox.Size = new System.Drawing.Size(135, 13);
+            this.labelMainCoinBox.TabIndex = 1;
+            this.labelMainCoinBox.Text = "Vending Machine Coin Box";
+            // 
+            // listViewPrimaryCoinBox
+            // 
+            this.listViewPrimaryCoinBox.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.chPrimaryCoins,
+            this.chPrimaryCoinCount,
+            this.chPrimaryCoinValue});
+            this.listViewPrimaryCoinBox.GridLines = true;
+            this.listViewPrimaryCoinBox.Location = new System.Drawing.Point(25, 66);
+            this.listViewPrimaryCoinBox.Name = "listViewPrimaryCoinBox";
+            this.listViewPrimaryCoinBox.Size = new System.Drawing.Size(275, 153);
+            this.listViewPrimaryCoinBox.TabIndex = 0;
+            this.listViewPrimaryCoinBox.UseCompatibleStateImageBehavior = false;
+            this.listViewPrimaryCoinBox.View = System.Windows.Forms.View.Details;
+            this.listViewPrimaryCoinBox.SelectedIndexChanged += new System.EventHandler(this.listViewPrimaryCoinBox_SelectedIndexChanged);
+            // 
+            // chPrimaryCoins
+            // 
+            this.chPrimaryCoins.Text = "Coins";
+            this.chPrimaryCoins.Width = 101;
+            // 
+            // chPrimaryCoinCount
+            // 
+            this.chPrimaryCoinCount.Text = "# Of Coins";
+            this.chPrimaryCoinCount.Width = 92;
+            // 
+            // chPrimaryCoinValue
+            // 
+            this.chPrimaryCoinValue.Text = "Amount";
+            this.chPrimaryCoinValue.Width = 88;
+            // 
+            // groupRack
+            // 
+            this.groupRack.Controls.Add(this.buttonFillRack);
+            this.groupRack.Controls.Add(this.listViewRack);
+            this.groupRack.Location = new System.Drawing.Point(25, 23);
+            this.groupRack.Name = "groupRack";
+            this.groupRack.Size = new System.Drawing.Size(255, 193);
+            this.groupRack.TabIndex = 0;
+            this.groupRack.TabStop = false;
+            this.groupRack.Text = "Rack";
+            // 
+            // buttonFillRack
+            // 
+            this.buttonFillRack.Location = new System.Drawing.Point(44, 135);
+            this.buttonFillRack.Name = "buttonFillRack";
+            this.buttonFillRack.Size = new System.Drawing.Size(149, 23);
+            this.buttonFillRack.TabIndex = 1;
+            this.buttonFillRack.Text = "Fill The Rack";
+            this.buttonFillRack.UseVisualStyleBackColor = true;
+            this.buttonFillRack.Click += new System.EventHandler(this.buttonFillRack_Click);
+            // 
+            // listViewRack
+            // 
+            this.listViewRack.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.chRackFlavor,
+            this.chRackRemaining});
+            this.listViewRack.GridLines = true;
+            this.listViewRack.Location = new System.Drawing.Point(7, 20);
+            this.listViewRack.Name = "listViewRack";
+            this.listViewRack.Size = new System.Drawing.Size(242, 108);
+            this.listViewRack.TabIndex = 0;
+            this.listViewRack.UseCompatibleStateImageBehavior = false;
+            this.listViewRack.View = System.Windows.Forms.View.Details;
+            // 
+            // chRackFlavor
+            // 
+            this.chRackFlavor.Text = "Flavor";
+            this.chRackFlavor.Width = 119;
+            // 
+            // chRackRemaining
+            // 
+            this.chRackRemaining.Text = "Remaining Cans";
+            this.chRackRemaining.Width = 118;
             // 
             // SodaVendingMachine
             // 
@@ -443,9 +443,9 @@
             this.tabVend.ResumeLayout(false);
             this.tabVend.PerformLayout();
             this.tabService.ResumeLayout(false);
-            this.groupRack.ResumeLayout(false);
             this.groupCoinBox.ResumeLayout(false);
             this.groupCoinBox.PerformLayout();
+            this.groupRack.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

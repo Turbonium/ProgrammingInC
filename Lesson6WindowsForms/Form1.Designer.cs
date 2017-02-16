@@ -1,4 +1,4 @@
-﻿namespace Lesson7WindowsContainerControls
+﻿namespace Lesson8MenusMDIFiles
 {
     partial class SodaVendingMachine
     {
@@ -174,7 +174,7 @@
             // 
             // pictureYellow
             // 
-            this.pictureYellow.Image = global::Lesson7WindowsContainerControls.Properties.Resources.Lemon;
+            this.pictureYellow.Image = global::Lesson8MenusMDIFiles.Properties.Resources.Lemon;
             this.pictureYellow.InitialImage = null;
             this.pictureYellow.Location = new System.Drawing.Point(536, 179);
             this.pictureYellow.Name = "pictureYellow";
@@ -186,7 +186,7 @@
             // 
             // pictureOrange
             // 
-            this.pictureOrange.Image = global::Lesson7WindowsContainerControls.Properties.Resources.Orange;
+            this.pictureOrange.Image = global::Lesson8MenusMDIFiles.Properties.Resources.Orange;
             this.pictureOrange.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureOrange.InitialImage")));
             this.pictureOrange.Location = new System.Drawing.Point(275, 179);
             this.pictureOrange.Name = "pictureOrange";
@@ -198,7 +198,7 @@
             // 
             // pictureRegular
             // 
-            this.pictureRegular.Image = global::Lesson7WindowsContainerControls.Properties.Resources.Regular;
+            this.pictureRegular.Image = global::Lesson8MenusMDIFiles.Properties.Resources.Regular;
             this.pictureRegular.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureRegular.InitialImage")));
             this.pictureRegular.Location = new System.Drawing.Point(36, 179);
             this.pictureRegular.Name = "pictureRegular";

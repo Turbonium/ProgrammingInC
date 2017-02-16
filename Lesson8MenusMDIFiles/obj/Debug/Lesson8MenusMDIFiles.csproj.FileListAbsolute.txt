@@ -1,0 +1,9 @@
+C:\Source\Repos\ProgrammingInC\Lesson8MenusMDIFiles\bin\Debug\Lesson8MenusMDIFiles.exe.config
+C:\Source\Repos\ProgrammingInC\Lesson8MenusMDIFiles\bin\Debug\Lesson8MenusMDIFiles.exe
+C:\Source\Repos\ProgrammingInC\Lesson8MenusMDIFiles\bin\Debug\Lesson8MenusMDIFiles.pdb
+C:\Source\Repos\ProgrammingInC\Lesson8MenusMDIFiles\bin\Debug\Lesson6ConsoleAsLibrary.exe
+C:\Source\Repos\ProgrammingInC\Lesson8MenusMDIFiles\bin\Debug\Lesson6ConsoleAsLibrary.pdb
+C:\Source\Repos\ProgrammingInC\Lesson8MenusMDIFiles\obj\Debug\Lesson8MenusMDIFiles.Properties.Resources.resources
+C:\Source\Repos\ProgrammingInC\Lesson8MenusMDIFiles\obj\Debug\Lesson8MenusMDIFiles.csproj.GenerateResource.Cache
+C:\Source\Repos\ProgrammingInC\Lesson8MenusMDIFiles\obj\Debug\Lesson8MenusMDIFiles.exe
+C:\Source\Repos\ProgrammingInC\Lesson8MenusMDIFiles\obj\Debug\Lesson8MenusMDIFiles.pdb
