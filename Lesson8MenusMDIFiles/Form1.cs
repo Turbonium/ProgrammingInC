@@ -236,6 +236,7 @@ namespace Lesson8MenusMDIFiles
         private void buttonFillRack_Click(object sender, EventArgs e)
         {
             canRack.FillTheCanRack();
+            constructRackDisplay();
         }
 
         private void tabService_Click(object sender, EventArgs e)

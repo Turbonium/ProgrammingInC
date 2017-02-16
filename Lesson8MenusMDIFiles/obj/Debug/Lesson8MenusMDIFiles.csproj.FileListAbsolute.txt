@@ -10,3 +10,4 @@ C:\Source\Repos\ProgrammingInC\Lesson8MenusMDIFiles\obj\Debug\Lesson8MenusMDIFil
 C:\Source\Repos\ProgrammingInC\Lesson8MenusMDIFiles\obj\Debug\Lesson8MenusMDIFiles.SodaVendingMachine.resources
 C:\Source\Repos\ProgrammingInC\Lesson8MenusMDIFiles\obj\Debug\Lesson8MenusMDIFiles.ServiceNotesForm.resources
 C:\Source\Repos\ProgrammingInC\Lesson8MenusMDIFiles\obj\Debug\Lesson8MenusMDIFiles.ServiceNoteForm.resources
+C:\Source\Repos\ProgrammingInC\Lesson8MenusMDIFiles\obj\Debug\Lesson8MenusMDIFiles.csprojResolveAssemblyReference.cache

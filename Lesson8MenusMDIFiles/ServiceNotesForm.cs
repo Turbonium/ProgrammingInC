@@ -34,6 +34,7 @@ namespace Lesson8MenusMDIFiles
             if (openDialog.ShowDialog(this) == DialogResult.OK)
             {
                 StreamReader fileReader = new System.IO.StreamReader(openDialog.FileName);
+                serviceNoteForm.Text = openDialog.FileName;
                 serviceNoteForm.noteText = fileReader.ReadToEnd();
                 serviceNoteForm.Show();
                 enableSaveMenuItemIfNoteExists();
@@ -66,19 +67,22 @@ namespace Lesson8MenusMDIFiles
             string rawText = null;
             foreach (ServiceNoteForm nf in this.MdiChildren)
             {
-                rawText += nf.noteText + Environment.NewLine;
+                rawText += nf.Text + Environment.NewLine;
             }
 
             Regex findFilenames = new Regex(@"([a-zA-Z]:)?(\\[.a-zA-Z0-9_-]+)+\\?");
 
             string result = null;
-            foreach (var fileMatch in findFilenames.Matches(rawText))
+            if (rawText != null)
             {
-                result += fileMatch + Environment.NewLine;
+                foreach (var fileMatch in findFilenames.Matches(rawText))
+                {
+                    result += fileMatch + Environment.NewLine;
+                }
+                MessageBox.Show(result, "Service Notes Found -");
             }
 
-            MessageBox.Show(result,
-                "All Filenames found in open Service Notes files");
+            if (rawText == null) MessageBox.Show("Please Open a service note prior to searching...");
         }
 
         private void toolStripMenuItemNewNote_Click(object sender, EventArgs e)

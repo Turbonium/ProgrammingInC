@@ -35,19 +35,20 @@
             // 
             this.textBoxServiceNote.AcceptsReturn = true;
             this.textBoxServiceNote.AcceptsTab = true;
+            this.textBoxServiceNote.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
             this.textBoxServiceNote.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBoxServiceNote.Location = new System.Drawing.Point(0, 0);
             this.textBoxServiceNote.Multiline = true;
             this.textBoxServiceNote.Name = "textBoxServiceNote";
             this.textBoxServiceNote.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBoxServiceNote.Size = new System.Drawing.Size(284, 261);
+            this.textBoxServiceNote.Size = new System.Drawing.Size(557, 512);
             this.textBoxServiceNote.TabIndex = 0;
             // 
             // ServiceNoteForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(557, 512);
             this.Controls.Add(this.textBoxServiceNote);
             this.Name = "ServiceNoteForm";
             this.Text = "Service Note";
