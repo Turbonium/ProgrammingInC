@@ -51,6 +51,7 @@ namespace Lesson8MenusMDIFiles
                 StreamWriter sw = new StreamWriter(saveDialog.FileName);
                 if (this.ActiveMdiChild != null)
                 {
+                    this.ActiveMdiChild.Text = saveDialog.FileName;
                     sw.Write((this.ActiveMdiChild as ServiceNoteForm).noteText);
                     sw.Close();
                 }
