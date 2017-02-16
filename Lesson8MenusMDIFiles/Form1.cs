@@ -263,5 +263,11 @@ namespace Lesson8MenusMDIFiles
         {
 
         }
+
+        private void buttonServiceNotes_Click(object sender, EventArgs e)
+        {
+            ServiceNotesForm serviceNotes = new ServiceNotesForm();
+            serviceNotes.Show();
+        }
     }
 }

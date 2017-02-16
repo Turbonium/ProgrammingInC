@@ -7,3 +7,6 @@ C:\Source\Repos\ProgrammingInC\Lesson8MenusMDIFiles\obj\Debug\Lesson8MenusMDIFil
 C:\Source\Repos\ProgrammingInC\Lesson8MenusMDIFiles\obj\Debug\Lesson8MenusMDIFiles.csproj.GenerateResource.Cache
 C:\Source\Repos\ProgrammingInC\Lesson8MenusMDIFiles\obj\Debug\Lesson8MenusMDIFiles.exe
 C:\Source\Repos\ProgrammingInC\Lesson8MenusMDIFiles\obj\Debug\Lesson8MenusMDIFiles.pdb
+C:\Source\Repos\ProgrammingInC\Lesson8MenusMDIFiles\obj\Debug\Lesson8MenusMDIFiles.SodaVendingMachine.resources
+C:\Source\Repos\ProgrammingInC\Lesson8MenusMDIFiles\obj\Debug\Lesson8MenusMDIFiles.ServiceNotesForm.resources
+C:\Source\Repos\ProgrammingInC\Lesson8MenusMDIFiles\obj\Debug\Lesson8MenusMDIFiles.ServiceNoteForm.resources

@@ -54,10 +54,31 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceNoteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServiceNoteForm.Designer.cs">
+      <DependentUpon>ServiceNoteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceNotesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServiceNotesForm.Designer.cs">
+      <DependentUpon>ServiceNotesForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServiceNoteForm.resx">
+      <DependentUpon>ServiceNoteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServiceNotesForm.resx">
+      <DependentUpon>ServiceNotesForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -100,6 +121,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Lemon1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Lesson8Instructions.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

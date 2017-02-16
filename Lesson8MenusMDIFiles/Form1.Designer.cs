@@ -64,6 +64,7 @@
             this.listViewRack = new System.Windows.Forms.ListView();
             this.chRackFlavor = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chRackRemaining = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.buttonServiceNotes = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureYellow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureOrange)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureRegular)).BeginInit();
@@ -199,7 +200,7 @@
             // 
             // pictureYellow
             // 
-            this.pictureYellow.Image = global::Lesson8MenusMDIFiles.Properties.Resources.Lemon;
+            this.pictureYellow.Image = ((System.Drawing.Image)(resources.GetObject("pictureYellow.Image")));
             this.pictureYellow.InitialImage = null;
             this.pictureYellow.Location = new System.Drawing.Point(570, 183);
             this.pictureYellow.Name = "pictureYellow";
@@ -211,7 +212,7 @@
             // 
             // pictureOrange
             // 
-            this.pictureOrange.Image = global::Lesson8MenusMDIFiles.Properties.Resources.Orange;
+            this.pictureOrange.Image = ((System.Drawing.Image)(resources.GetObject("pictureOrange.Image")));
             this.pictureOrange.InitialImage = null;
             this.pictureOrange.Location = new System.Drawing.Point(302, 183);
             this.pictureOrange.Name = "pictureOrange";
@@ -223,7 +224,7 @@
             // 
             // pictureRegular
             // 
-            this.pictureRegular.Image = global::Lesson8MenusMDIFiles.Properties.Resources.Regular;
+            this.pictureRegular.Image = ((System.Drawing.Image)(resources.GetObject("pictureRegular.Image")));
             this.pictureRegular.InitialImage = null;
             this.pictureRegular.Location = new System.Drawing.Point(58, 183);
             this.pictureRegular.Name = "pictureRegular";
@@ -271,6 +272,7 @@
             // 
             // tabService
             // 
+            this.tabService.Controls.Add(this.buttonServiceNotes);
             this.tabService.Controls.Add(this.groupCoinBox);
             this.tabService.Controls.Add(this.groupRack);
             this.tabService.Location = new System.Drawing.Point(4, 22);
@@ -427,6 +429,16 @@
             this.chRackRemaining.Text = "Remaining Cans";
             this.chRackRemaining.Width = 118;
             // 
+            // buttonServiceNotes
+            // 
+            this.buttonServiceNotes.Location = new System.Drawing.Point(88, 315);
+            this.buttonServiceNotes.Name = "buttonServiceNotes";
+            this.buttonServiceNotes.Size = new System.Drawing.Size(249, 23);
+            this.buttonServiceNotes.TabIndex = 2;
+            this.buttonServiceNotes.Text = "Service Notes";
+            this.buttonServiceNotes.UseVisualStyleBackColor = true;
+            this.buttonServiceNotes.Click += new System.EventHandler(this.buttonServiceNotes_Click);
+            // 
             // SodaVendingMachine
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -487,6 +499,7 @@
         private System.Windows.Forms.ColumnHeader chPrimaryCoins;
         private System.Windows.Forms.ColumnHeader chPrimaryCoinCount;
         private System.Windows.Forms.ColumnHeader chPrimaryCoinValue;
+        private System.Windows.Forms.Button buttonServiceNotes;
     }
 }
 

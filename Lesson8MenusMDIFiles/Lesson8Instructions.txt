@@ -1,0 +1,29 @@
+﻿Create a Form for displaying Service Note windows
+1. In the Service tab for the vending machine, add a button to bring up a form that allows the
+vending machine worker to view and create service notes. The notes could be any text that
+the worker would like to include made at the time that the machine was serviced: “Nobody
+buys Lemon Cola, and there’s never any Orange left”, “There were a lot of slugs in the coin
+box”, “Machine always empty, so we should service it more often”, etc.
+2. The Service Notes form will be an MDI form (set IsMDIContainer to true).
+3. The Service Notes form is a visual container for individual Service Notes. It is not a Service
+Note itself.
+4. Add a MenuStrip object to the form to implement a simple menu. The menu structure will be
+File (which will contain the menu items New Note, Open, Save, and Exit) and Find (which
+will contain Filenames).
+Create a Form for creating an individual Service Note
+5. Create a second new form for holding an individual Service Note.
+6. This form will be simply a form with one control: a textbox that fills the entire area of the
+form.
+7. Add a public property that will allow the text property of the textbox control to be retrieved
+and set from outside of this class.
+Menu Item event procedures
+8. Going back to the Service Notes MDI form, add event procedures to the menu items
+8.1. New Note will create a new blank Service Note
+8.2. Open will use OpenFileDialog and a new instance of Service Note to display a file
+specified by the worker
+8.3. Save will use SaveFileDialog to save the contents of a Service Note to a file. Use
+ActiveMDIChild to determine which Service Note to save to disk. Note that this menu
+item should not be active if there is no Service Note open.
+8.4. Exit will close the Service Notes form
+8.5. Filenames will use a regular expression to find all of the filenames in all of the open
+service notes (this one is optional and described later in this exercise
